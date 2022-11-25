@@ -1,0 +1,140 @@
+.b-container{
+    width:200px;
+    height:150px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+    color: #fff;
+}
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width: 40%;
+    height: auto;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .text_table, .header_table {
+      flex: 1;
+      text-align: center;
+    }
+    .wrapper_table {
+      width: 100%;
+      display: flex;
+      padding: 5px;
+      align-items: center;
+      box-sizing: border-box;
+      border: 0.5px solid #eee;
+    }
+    .barcode {
+      display: flex;
+      justify-content: center;
+    }
+    .table_name {
+      flex: 2;
+    }
+    .header_table {
+    font-weight: bold;
+}
+.status_table {
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+}
+.add_button{
+    font-weight: bold;
+    display: block;
+    background: green;
+    color: white;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.row_wrp {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button_print, .button_remove, .button_edit {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.button_print {
+    background-image: url(../img/printer.png);
+}
+.button_remove {
+    background-image: url(../img/trash.png);
+}
+.button_edit {
+    background-image: url(../img/draw.png);
+}
+.wrp_buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.row_price {
+    flex: 1;
+    border: none;
+    border-radius: 2px;
+    padding-left: 8px;
+    padding-right: 20px;
+    line-height: 28px;
+}
+.popup_exit {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ruble {
+    margin-left: 10px;
+    font-weight: bold;
+}
+.submit_button {
+    width: auto;
+    margin: 0 auto;
+    border: 1px solid #898989;
+    padding: 7px 20px;
+    background: green;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.class_id {
+    width: 30px;
+    flex: none;
+}
+.class_stat {
+    flex: none;
+    width: 90px;
+}
