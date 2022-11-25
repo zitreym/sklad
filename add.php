@@ -3,7 +3,7 @@ header('Content-Type: text/html; charset=utf-8');
 $data = $_POST;
 $code = rand(1000000000, 9999999999);
 $data["date"] = date('d.m.Y');
-$db = mysqli_connect("localhost", "root", "Oclentepe123!", "sklad");
+$db = mysqli_connect("172.27.0.2", "zitreym", "Despxamv123", "sklad");
 mysqli_set_charset($db, "utf8mb4");
 $name = $data["name"];
 $category = $data["category"];

@@ -1,7 +1,7 @@
 <?
 header('Content-Type: text/html; charset=utf-8');
 $param = $_POST["param"];
-$db = mysqli_connect("localhost", "root", "Oclentepe123!", "sklad");
+$db = mysqli_connect("172.27.0.2", "zitreym", "Despxamv123", "sklad");
 mysqli_set_charset($db, "utf8mb4");
 $sql = "SELECT * FROM sklad_it WHERE `sklad_it`.`category` = '$param'";
 $result = mysqli_query($db, $sql);
