@@ -22,7 +22,7 @@ if(!$id){
 <div class="wrapper_table">
     <p class="text_table"><?echo $id;?></p>
     <p class="text_table table_name"><?echo $name;?></p>
-    <div class="text_table barcode"><img src="http://192.168.150.242/qr/?id=<? echo $id;?>" alt=""></div>
+    <div class="text_table barcode"><img src="http://node2.treym.ru/qr/?id=<? echo $id;?>" alt=""></div>
     <p class="text_table"><?echo $category;?></p>
     <div class="text_table barcode"><div class="status_table" style="background: <?
     switch ($status)
@@ -42,7 +42,7 @@ if(!$id){
     <p class="text_table"><?echo $comment;?></p>
     <p class="text_table"><?echo $date;?></p>
     <div class="text_table wrp_buttons">
-        <a href="http://192.168.150.242/qr/print.php?id=<? echo $id;?>" target="blank" class="button_print"></a>
+        <a href="http://node2.treym.ru/qr/print.php?id=<? echo $id;?>" target="blank" class="button_print"></a>
         <p class="button_edit"></p>   
         <p onclick="delrow(this,<?echo $id;?>)" class="data-id button_remove"></p>
     </div>

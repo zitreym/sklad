@@ -11,7 +11,7 @@ foreach ($result as $value) {
     <div class="wrapper_table">
         <p class="text_table"><?echo $value['0'];?></p>
         <p class="text_table table_name"><?echo $value['1'];?></p>
-        <div class="text_table barcode"><img src="http://192.168.150.242/qr/?id=<? echo $value['0'];?>" alt=""></div>
+        <div class="text_table barcode"><img src="http://node2.treym.ru/qr/?id=<? echo $value['0'];?>" alt=""></div>
         <p class="text_table"><?echo $value['3'];?></p>
         <div class="text_table barcode"><div class="status_table" style="background: <?
         switch ($value['4'])
@@ -31,7 +31,7 @@ foreach ($result as $value) {
         <p class="text_table"><?echo $value['7'];?></p>
         <p class="text_table"><?echo $value['8'];?></p>
         <div class="text_table wrp_buttons">
-            <a href="http://192.168.150.242/qr/print.php?id=<? echo $value['0'];?>" target="blank" class="button_print"></a>
+            <a href="http://node2.treym.ru/qr/print.php?id=<? echo $value['0'];?>" target="blank" class="button_print"></a>
             <p class="button_edit"></p>   
             <p onclick="delrow(this,<?echo $value['0'];?>)" class="data-id button_remove"></p>
         </div>
